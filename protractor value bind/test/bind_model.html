@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>by binding</title>
+<script src="angular.min.js"></script>
+</head>
+<body ng-app="myApp">
+
+	<div ng-controller="myCtrl">
+	<input type="text" ng-model="msg">
+	<p ng-bind="msg"></p>
+	</div>
+<script>
+	var app=angular.module('myApp', []);
+	app.controller('myCtrl', function($scope){
+	$scope.msg='99';
+	});
+</script>
+</body>
+</html>
