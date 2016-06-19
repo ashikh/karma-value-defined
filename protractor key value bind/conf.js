@@ -4,5 +4,5 @@ exports.config={
 	capabilities:{
 		browserName: 'chrome'
 	},
-	specs:['test/Spec.js']
+	specs:['test/keySpec.js']
 }
